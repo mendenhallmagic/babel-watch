@@ -12,6 +12,8 @@ const fork = require('child_process').fork;
 const execSync = require('child_process').execSync;
 const commander = require('commander');
 
+require('babel-polyfill');
+
 const RESTART_COMMAND = 'rs';
 
 const program = new commander.Command("babel-watch");
